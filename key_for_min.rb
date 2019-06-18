@@ -6,11 +6,14 @@ def key_for_min_value(name_hash)
     return nil
   else
     lowest = 999
+    loser = ""
     name_hash.collect do |name, num|
       if num < lowest
+        loser = name
         lowest = num
-        return name
-      end
+      else
+
     end
+    return loser
   end
 end
