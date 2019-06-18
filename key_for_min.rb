@@ -5,15 +5,10 @@ def key_for_min_value(name_hash)
   if name_hash.size == 0
     return nil
   else
-    name_hash.each do |name|
-      if name == name.first
-        minValue = name
-      else
-        if name < minValue
-          minValue = name
-        end
-      end
+    lowest = name_hash.first
+    name_hash.collect do |name, num|
+      if num < value1
+        x = name
+        lowest = num
     end
-  end
-  return minValue
 end
