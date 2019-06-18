@@ -11,8 +11,7 @@ def key_for_min_value(name_hash)
       if num < lowest
         loser = name
         lowest = num
-      else
-
+      end
     end
     return loser
   end
